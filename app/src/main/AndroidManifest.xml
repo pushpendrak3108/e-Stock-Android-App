@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_appicon"
+        android:label="e-Stock"
+        android:roundIcon="@mipmap/ic_launcher_appicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjApp">
+        <activity android:name=".AboutActivity"
+            android:parentActivityName=".AdminMenuActivity"></activity>
+        <activity android:name=".ReportActivity" />
+        <activity android:name=".AdminMenuActivity" />
+        <activity android:name=".ViewTransactions" />
+        <activity android:name=".ViewStockActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".update_stock" />
+        <activity android:name=".check_in" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
